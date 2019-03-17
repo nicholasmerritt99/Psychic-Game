@@ -18,7 +18,8 @@ window.onload = function () {
         // When the user presses a key, it will run the following function...
         document.onkeypress = function(event) {
             var userGuess = event.key;
-        
+            
+
             if(userGuess === computerChoice){
                 wins++;
                 guessesleft = 10;
