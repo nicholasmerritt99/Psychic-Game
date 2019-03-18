@@ -14,38 +14,45 @@ window.onload = function () {
             console.log(userGuess)
 
 
-
-        // When the user presses a key, it will run the following function...
-        document.onkeypress = function(event) {
-            var userGuess = event.key;
-            
-
-            if(userGuess === computerChoice){
-                wins++;
-                guessesleft = 10;
-                guesses = [ ];
-            }else{
-                guessesleft--;
-            }
-        
-            if(guessesleft === 0){
-                losses++;
-                guessesleft = 10;
-                guesses = [ ];
+                    function randomletter() {
+                        computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+                    }
                 
-            }
+                
+                
+                            document.onkeypress = function(event) {
+                                var userGuess = event.key;
+                                
 
-            if(guesses.indexOf(userGuess) >=0){
-                guesses = [ ];
-            } else{
-                guesses.push(userGuess);
-                document.getElementById('guesses').innerHTML = guesses
-            }
-        
-            document.getElementById('wins').innerHTML = "Wins: " + wins;
-            document.getElementById('losses').innerHTML = "losses: " + losses;
-            document.getElementById('guessesleft').innerHTML = "Guesses left: " + guessesleft;
-            document.getElementById('guesses').innerHTML = "Guesses: " + guesses;
-        
-        }   
+                                if(userGuess === computerChoice){
+                                    wins++;
+                                    guessesleft = 10;
+                                    guesses = [ ];
+                                }else{
+                                    guessesleft--;
+                                }
+                            
+                                if(guessesleft === 0){
+                                    losses++;
+                                    guessesleft = 10;
+                                    guesses = [ ];
+                                    
+                                }
+
+                                if(guesses.indexOf(userGuess) >=0){
+                                    guesses = [ ];
+                                } else{
+                                    guesses.push(userGuess);
+                                    document.getElementById('guesses').innerHTML = guesses
+                                }
+                            
+                                document.getElementById('wins').innerHTML = "Wins: " + wins;
+                                document.getElementById('losses').innerHTML = "losses: " + losses;
+                                document.getElementById('guessesleft').innerHTML = "Guesses left: " + guessesleft;
+                                document.getElementById('guesses').innerHTML = "Guesses: " + guesses;
+                            
+                            
+
+                    }   
+                    
 }
