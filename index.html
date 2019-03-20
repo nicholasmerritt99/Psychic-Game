@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <title>Document</title>
+    <title>The Game</title>
 </head>
 <body>
-    <div>
-        <h1>Guess the Random Letter</h1>
+    <div style="max-width:25%" id="header" class="row">
+        <h1 class="col-12" id="Gameheader">Guess the Random Letter</h1>
     </div>
-    <div>
+    <div class="row">
         <p id="wins">Wins: 0</p>
         <p id="losses">losses: 0</p>
         <p id="guessesleft">Guesses left: 10</p>
         <p id="guesses">Guesses:</p>
     </div>
     <div>
-        <h3>Instructions</h3>
-        <p>
+        <h3 class="row" id="instructions">Instructions</h3>
+        <p class="row" id="instructionsparagraph">
             The computer will randomly generate a letter of the alphabet. You will try to guess the letter by clicking a letter key. 
             You will have a total of 10 guesses. If you guess the correct letter your win score will increase by 1. 
             If you run out of guesses your losses score will increase by 1. Lets see if you have skills to win!

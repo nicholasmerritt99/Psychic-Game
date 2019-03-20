@@ -1,4 +1,77 @@
-#wins{
-    font-size: 20px;
-    color: chartreuse;
+#header{
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    color: lime;
+    text-align: center;
+    font-size: 40px;
 }
+
+body {
+    background-image: url('../images/riddle.jpeg');
+    border-color: white;
+  }
+
+  #wins{
+      color: limegreen;
+      width: 35%;
+      height: 20%;
+      text-align: center;
+      font-size: 30px;
+      position: fixed;
+      top: 40%;
+  }
+
+  #losses{
+      color: limegreen;
+      width: 35%;
+      height: 20%;
+      text-align: center;
+      font-size: 30px;
+      position: fixed;
+      top: 40%;
+      left: 10%;
+  }
+
+  #guessesleft{
+      color: limegreen;
+      width: 35%;
+      height: 20%;
+      text-align: center;
+      font-size: 30px;
+      position: fixed;
+      top: 40%;
+      left: 25%;
+  }
+
+  #guesses{
+      color: limegreen;
+      width: 35%;
+      height: 20%;
+      text-align: center;
+      font-size: 30px;
+      position: fixed;
+      top: 40%;
+      left: 40%;
+  }
+
+  #instructions{
+      color: purple;
+      position: fixed;
+      top: 60%;
+      left: 45%;
+      text-align: center;
+      width: 35%;
+      height: 20%;
+      font-size: 40px;
+      
+  }
+
+  #instructionsparagraph{
+      color: red;
+      position: fixed;
+      top: 80%;
+      left: 20%;
+      font-size: 20px;
+  }
+
