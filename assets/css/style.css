@@ -45,14 +45,14 @@ body {
   }
 
   #guesses{
-      color: limegreen;
+      color: red;
       width: 35%;
       height: 20%;
       text-align: center;
       font-size: 30px;
       position: fixed;
       top: 40%;
-      left: 40%;
+      left: 45%;
   }
 
   #instructions{
